@@ -1,3 +1,3 @@
 # practica2 
 
-#jeñe
+#Ejercicio correspondiente a la asignatura Desarrollo de Interfaces 
