@@ -6,12 +6,12 @@ public class pedido {
 
     private int codigo_pedido;
     private int codigo_pedido_cliente;
-    private Date fecha_pedido;
-    private Date fecha_entrega;
+    private Calendar fecha_pedido;
+    private Calendar fecha_entrega;
     private String estado;
     private String comentarios;
 
-    public pedido(int codigo_pedido, int codigo_pedido_cliente, Date fecha_pedido, Date fecha_entrega, String estado,
+    public pedido(int codigo_pedido, int codigo_pedido_cliente, Calendar fecha_pedido, Calendar fecha_entrega, String estado,
             String comentarios) {
         this.codigo_pedido = codigo_pedido;
         this.codigo_pedido_cliente = codigo_pedido_cliente;
@@ -37,19 +37,19 @@ public class pedido {
         this.codigo_pedido_cliente = codigo_pedido_cliente;
     }
 
-    public Date getFecha_pedido() {
+    public Calendar getFecha_pedido() {
         return fecha_pedido;
     }
 
-    public void setFecha_pedido(Date fecha_pedido) {
+    public void setFecha_pedido(Calendar fecha_pedido) {
         this.fecha_pedido = fecha_pedido;
     }
 
-    public Date getFecha_entrega() {
+    public Calendar getFecha_entrega() {
         return fecha_entrega;
     }
 
-    public void setFecha_entrega(Date fecha_entrega) {
+    public void setFecha_entrega(Calendar fecha_entrega) {
         this.fecha_entrega = fecha_entrega;
     }
 
@@ -69,11 +69,4 @@ public class pedido {
         this.comentarios = comentarios;
     }
 
-    
-
-    
-    
-    
-    
-    
 }

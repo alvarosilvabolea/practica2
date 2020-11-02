@@ -1,8 +1,5 @@
 package Jardineria.ModelClassDao;
 
-import java.util.List;
-import java.util.Optional;
-
 import java.util.*;
 
 public interface Dao<T> {
@@ -11,10 +8,10 @@ public interface Dao<T> {
 
     List<T> getAll();
 
-    void save(T clientes);
+    void save(T t) throws Exception;
 
-    void update(T clientes, String[] params);
+    void update(T t, String[] params);
 
-    void delete(T clientes);
+    void delete(T t);
     
 }

@@ -1,21 +1,21 @@
 package Jardineria.ModelClass;
 
-import java.util.*;
 
 public class cliente {
 
     private int codigo_cliente;
     private String nombre_cliente;
     private String domicilio;
-    private double limite_credit ;
+    private int telefono;
+    private double limite_credit;
     private String codigo_empleado_rep_ventas;
 
-    public cliente(int codigo_cliente, String nombre_cliente, String domicilio, double limite_credit,
+    public cliente(int codigo_cliente, String nombre_cliente, String domicilio, int telefono, double limite_credit,
             String codigo_empleado_rep_ventas) {
-
         this.codigo_cliente = codigo_cliente;
         this.nombre_cliente = nombre_cliente;
         this.domicilio = domicilio;
+        this.telefono = telefono;
         this.limite_credit = limite_credit;
         this.codigo_empleado_rep_ventas = codigo_empleado_rep_ventas;
     }
@@ -44,6 +44,14 @@ public class cliente {
         this.domicilio = domicilio;
     }
 
+    public int getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
     public double getLimite_credit() {
         return limite_credit;
     }
@@ -60,17 +68,8 @@ public class cliente {
         this.codigo_empleado_rep_ventas = codigo_empleado_rep_ventas;
     }
 
-	
-
     
 
+   
 
-
-
-
-    
-
-
-    
-    
 }
