@@ -3,12 +3,12 @@ package vehiculo;
 public class autobus {
 
     public int pasajeros;
-    public String compañia;
+    public String compagnia;
     public String tipo_bus;
 
-    public autobus(int pasajeros, String compañia, String tipo_bus) {
+    public autobus(int pasajeros, String compagnia, String tipo_bus) {
         this.pasajeros = pasajeros;
-        this.compañia = compañia;
+        this.compagnia = compagnia;
         this.tipo_bus = tipo_bus;
     }
 
@@ -20,12 +20,12 @@ public class autobus {
         this.pasajeros = pasajeros;
     }
 
-    public String getCompañia() {
-        return compañia;
+    public String getcompagnia() {
+        return compagnia;
     }
 
-    public void setCompañia(String compañia) {
-        this.compañia = compañia;
+    public void setCompagnia(String compagnia) {
+        this.compagnia = compagnia;
     }
 
     public String getTipo_bus() {
@@ -38,7 +38,7 @@ public class autobus {
 
     @Override
     public String toString() {
-        return "autobus [compañia=" + compañia + ", pasajeros=" + pasajeros + ", tipo_bus=" + tipo_bus + "]";
+        return "autobus [compagnia=" + compagnia + ", pasajeros=" + pasajeros + ", tipo_bus=" + tipo_bus + "]";
     }
 
     
